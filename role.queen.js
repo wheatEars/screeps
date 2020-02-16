@@ -65,11 +65,26 @@ module.exports = {
             creep.withdraw(factory,'G')
             //压缩o
             creep.withdraw(factory,RESOURCE_OXIDANT);
+            creep.withdraw(factory,'utrium_bar');
+            creep.withdraw(factory,'reductant');
+            creep.withdraw(factory,'purifier');
             creep.withdraw(factory,'battery');
         
          if(factory.store.getUsedCapacity('O')<25000){
               creep.withdraw(creep.room.storage,'O');
               creep.transfer(factory,'O');
+          }
+          if(factory.store.getUsedCapacity('H')<25000){
+              creep.withdraw(creep.room.storage,'H');
+              creep.transfer(factory,'H');
+          }
+          if(factory.store.getUsedCapacity('U')<25000){
+              creep.withdraw(creep.room.storage,'U');
+              creep.transfer(factory,'U');
+          }
+          if(factory.store.getUsedCapacity('X')<25000){
+              creep.withdraw(creep.room.storage,'X');
+              creep.transfer(factory,'X');
           }
         //  creep.withdraw(factory,'O');
            

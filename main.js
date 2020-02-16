@@ -42,6 +42,9 @@ module.exports.loop = function () {
     //    factory('E17N41')[0].produce('battery');
     //}
     factory('E17N42')[0].produce(RESOURCE_OXIDANT);
+    factory('E17N41')[0].produce('utrium_bar');
+    factory('E17N43')[0].produce('reductant');
+    factory('E15N48')[0].produce('purifier');
    var Myrooms=['E17N42','E17N43','E17N41','E15N48'];
    for(var i of Myrooms){
    	var r=Game.rooms[i]
