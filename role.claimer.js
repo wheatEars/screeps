@@ -12,7 +12,7 @@ module.exports = {
         if(creep.hits<creep.hitsMax){
             creep.heal(creep);
         }
-            const pos=new RoomPosition(39,18,'E15N41');
+            const pos=new RoomPosition(41,22,'E13N47');
             creep.moveTo(pos);
             creep.claimController(creep.room.controller);
             

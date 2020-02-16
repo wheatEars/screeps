@@ -38,9 +38,12 @@ module.exports.loop = function () {
   if(Game.rooms['E17N42'].storage.store.getUsedCapacity('energy')>=500000){
         factory('E17N42')[0].produce('battery');
     }
-    //if(Game.rooms['E17N41'].storage.store.getUsedCapacity('energy')>=500000){
-    //    factory('E17N41')[0].produce('battery');
-    //}
+    if(Game.rooms['E17N41'].storage.store.getUsedCapacity('energy')>=500000){
+        factory('E17N41')[0].produce('battery');
+    }
+    if(Game.rooms['E15N48'].storage.store.getUsedCapacity('energy')>=500000){
+        factory('E15N48')[0].produce('battery');
+    }
     factory('E17N42')[0].produce(RESOURCE_OXIDANT);
     factory('E17N41')[0].produce('utrium_bar');
     factory('E17N43')[0].produce('reductant');
