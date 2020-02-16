@@ -51,6 +51,9 @@ module.exports = {
         creep.withdraw(creep.room.terminal,'GO')
         creep.transfer(creep.room.storage,'GO')
         creep.transfer(creep.room.terminal,RESOURCE_OXIDANT);
+        creep.transfer(creep.room.terminal,'purifier');
+        creep.transfer(creep.room.terminal,'reductant');
+        creep.transfer(creep.room.terminal,'utrium_bar');
         creep.transfer(creep.room.storage,RESOURCE_ENERGY);
         if(factory!=null){
              if(factory.store.getUsedCapacity(RESOURCE_ENERGY)<20000){
